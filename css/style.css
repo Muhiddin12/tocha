@@ -94,15 +94,15 @@ h6 {
 }
 
 @font-face {
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
   src: url("/fonts/Gilroy-Medium.ttf");
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light";
   src: url("/fonts/Gilroy-Light.ttf");
 }
 .wrapper {
-  background: rgba(186, 199, 219, 0.5);
+  background: rgba(242, 247, 255, 0.5);
 }
 
 .container {
@@ -110,10 +110,16 @@ h6 {
   display: flex;
   max-width: 1110px;
 }
+@media (max-width: 1439px) {
+  .container {
+    width: 77%;
+  }
+}
 
 .header {
-  padding: 0 2vw;
-  margin: 0 auto;
+  margin-bottom: 121px;
+}
+.header__in {
   justify-content: space-between;
   padding-top: 34px;
 }
@@ -123,7 +129,7 @@ h6 {
 }
 .header__logo h3 {
   padding-top: 10px;
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -143,10 +149,508 @@ h6 {
   gap: 63px;
 }
 .header__menu ul li {
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   color: #1D2530;
+}
+
+.hero {
+  margin-bottom: 131px;
+}
+.hero__in {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__description {
+  max-width: 700px;
+  margin-top: 20px;
+}
+@media (max-width: 1439px) {
+  .hero__description {
+    margin: 0;
+  }
+}
+.hero__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: #685ED6;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+.hero__title span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+  white-space: nowrap;
+}
+@media (max-width: 1439px) {
+  .hero__title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 56px;
+    color: #685ED6;
+    margin-bottom: 20px;
+    max-width: 380px;
+  }
+  .hero__title span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 56px;
+    color: black;
+    white-space: nowrap;
+  }
+}
+.hero__subtitle {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1D2530;
+  margin-bottom: 32px;
+  max-width: 490px;
+}
+@media (max-width: 1439px) {
+  .hero__subtitle {
+    font-family: "Gilroy-Light";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #1D2530;
+    margin-bottom: 22px;
+    max-width: 490px;
+  }
+}
+.hero__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #685ED6;
+  margin-bottom: 32px;
+}
+.hero__btn {
+  position: relative;
+}
+.hero__btn h5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 32px;
+  background: #685ED6;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 168px;
+}
+.hero__purple {
+  position: absolute;
+  left: -10px;
+  bottom: -40px;
+  transform: rotate(30deg);
+}
+.hero__purple img {
+  max-width: 100px;
+  max-height: 72px;
+}
+.hero__image {
+  max-width: 690px;
+  min-width: 500px;
+  max-height: 555px;
+}
+.hero__image img {
+  width: 100%;
+}
+
+.messenger {
+  margin-bottom: 63px;
+}
+.messenger__in {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+@media (max-width: 1439px) {
+  .messenger__in {
+    padding-right: 3%;
+  }
+}
+.messenger__description {
+  max-width: 490px;
+}
+@media (max-width: 1439px) {
+  .messenger__description {
+    width: 470px;
+    padding-right: 20px;
+  }
+}
+.messenger__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 32px;
+  color: #1D2530;
+  margin-bottom: 68px;
+}
+@media (max-width: 1439px) {
+  .messenger__title {
+    white-space: nowrap;
+    font-size: calc(0.2vw + 2.7rem);
+  }
+}
+.messenger__menu {
+  display: flex;
+  margin-bottom: 49px;
+  gap: 29px;
+}
+@media (max-width: 1439px) {
+  .messenger__menu {
+    gap: 24px;
+  }
+}
+.messenger__image {
+  max-width: 62px;
+  max-height: 62px;
+}
+.messenger__image img {
+  max-width: 62px;
+}
+@media (max-width: 1439px) {
+  .messenger__image {
+    max-width: 58px;
+    max-height: 58px;
+  }
+  .messenger__image img {
+    max-width: 58px;
+  }
+}
+.messenger__text h6 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1D2530;
+  margin-bottom: 8px;
+}
+@media (max-width: 1439px) {
+  .messenger__text h6 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    color: #1D2530;
+    margin-bottom: 8px;
+  }
+}
+.messenger__text p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1D2530;
+}
+@media (max-width: 1439px) {
+  .messenger__text p {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #1D2530;
+  }
+}
+.messenger__phone {
+  width: 411px;
+  height: 666px;
+}
+.messenger__phone img {
+  width: 411px;
+}
+@media (max-width: 1439px) {
+  .messenger__phone {
+    width: 400px;
+  }
+  .messenger__phone img {
+    width: 400px;
+    max-height: 655px;
+  }
+}
+
+.pockets {
+  padding: 100px 0;
+  margin-bottom: 100px;
+  background: #E5E5E5;
+}
+.pockets__in {
+  display: block;
+}
+.pockets__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  text-align: center;
+  color: #1D2530;
+  margin-bottom: 16px;
+}
+@media (max-width: 1439px) {
+  .pockets__title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 15px;
+  }
+}
+.pockets__subtitle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1D2530;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.pockets__cards {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1439px) {
+  .pockets__cards {
+    gap: 27px;
+  }
+}
+.pockets__card {
+  width: 31.53%;
+  max-height: 387px;
+  background: #FCFEFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1439px) {
+  .pockets__card {
+    max-width: 31.53%;
+    min-width: 250px;
+    max-height: 387px;
+    background: #FCFEFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pockets__types {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 48px;
+  color: #685ED6;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 40px;
+  text-align: center;
+  background: rgba(104, 94, 214, 0.05);
+}
+@media (max-width: 1439px) {
+  .pockets__types {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 43px;
+    color: #685ED6;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 38px;
+    text-align: center;
+    background: rgba(104, 94, 214, 0.05);
+  }
+}
+.pockets__info {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #1D2530;
+  margin-bottom: 32px;
+  max-width: 255px;
+  max-height: 80px;
+}
+@media (max-width: 1439px) {
+  .pockets__info {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 30px;
+    max-width: 230px;
+    max-height: 80px;
+  }
+}
+.pockets__text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1D2530;
+  margin-bottom: 46px;
+}
+@media (max-width: 1439px) {
+  .pockets__text {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 44px;
+  }
+}
+.pockets__btn {
+  padding: 12px;
+  text-align: center;
+  background: #685ED6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  width: 82%;
+  max-height: 48px;
+  margin-bottom: 50px;
+}
+.pockets__btn p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+@media (max-width: 1439px) {
+  .pockets__btn {
+    padding: 12px;
+    text-align: center;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    width: 80%;
+    max-height: 48px;
+    margin-bottom: 46px;
+  }
+}
+
+.phones__in {
+  display: block;
+}
+.phones__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  color: #1D2530;
+}
+.phones__image img {
+  width: 100%;
+}
+
+.footer {
+  padding: 111px 0 66px;
+  background: #1D2530;
+}
+.footer__logo {
+  margin-right: 35%;
+}
+.footer__logo h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer__img {
+  max-width: 81px;
+  max-height: 59px;
+  margin-bottom: 16px;
+}
+.footer__img img {
+  width: 100%;
+}
+.footer__info {
+  width: 100%;
+  margin-right: 14%;
+}
+.footer__info h4 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #F4F5F7;
+  margin-bottom: 32px;
+  white-space: nowrap;
+}
+.footer__info ul li {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #EEEFF4;
+  margin-bottom: 12px;
+}
+
+.all {
+  padding: 25px 0;
+  background: #141B23;
+}
+.all p {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #D9DBE1;
 }

@@ -94,34 +94,38 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Gilroy-bold';
+  font-family: 'Gilroy';
   src: url('/fonts/Gilroy-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Light';
   src: url('/fonts/Gilroy-Light.ttf');
 }
 
 .wrapper {
-  background: rgba(186, 199, 219, 0.5);
+  background: rgba(242, 247, 255, 0.5);
 }
 
 .container {
   margin: 0 auto;
   display: flex;
   max-width: 1110px;
+
+  @media (max-width: 1439px) {
+    width: 77%;
+  }
 }
 
-.header {
-  // max-width: 1440px;
-    // padding: 0 11.45%;
-  // padding: 0 165px;
-  padding: 0 2vw;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding-top: 34px;
+// Header section
 
+.header {
+  margin-bottom: 121px;
+
+  &__in {
+    justify-content: space-between;
+    padding-top: 34px;
+  }
 
   &__logo {
     display: flex;
@@ -129,7 +133,7 @@ h6 {
 
     h3 {
       padding-top: 10px;
-      font-family: 'Gilroy-bold';
+      font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
@@ -153,7 +157,7 @@ h6 {
       gap: 63px;
 
       li {
-        font-family: 'Gilroy-bold';
+        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -161,5 +165,567 @@ h6 {
         color: #1D2530;
       }
     }
+  }
+}
+
+// Hero section
+
+.hero {
+  margin-bottom: 131px;
+
+  &__in {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    max-width: 700px;
+    margin-top: 20px;
+
+    @media (max-width: 1439px) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #685ED6;
+    margin-bottom: 24px;
+    max-width: 380px;
+
+    span {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      color: black;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 56px;
+      color: #685ED6;
+      margin-bottom: 20px;
+      max-width: 380px;
+
+      span {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 56px;
+        color: black;
+        white-space: nowrap;
+      }
+    }
+
+
+  }
+
+  &__subtitle {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #1D2530;
+    margin-bottom: 32px;
+    max-width: 490px;
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy-Light';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 31px;
+      color: #1D2530;
+      margin-bottom: 22px;
+      max-width: 490px;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #685ED6;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    position: relative;
+    
+    h5 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 32px;
+      background: #685ED6;
+      color: white;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 6px;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      max-width: 168px;
+    }
+  }
+
+  &__purple {
+    position: absolute;
+    left: -10px;
+    bottom: -40px;
+    // filter: drop-shadow(1px 1px 315px rgb(218, 25, 25));
+    // box-shadow: 55px 55px 55px rgba(192, 14, 118, 0.4);
+    // filter: drop-shadow(25px 55px 155px rgba(223, 48, 25, 0.4));
+    // background: rgba(140, 48, 245, 0.4);
+    transform: rotate(30deg);
+    // opacity: 0.1;
+
+    img {
+      max-width: 100px;
+      max-height: 72px;
+      // box-shadow: 0 0 50px black;
+      // filter: drop-shadow(1px 1px 315px rgb(218, 25, 25));
+    }
+  }
+
+  &__image {
+    max-width: 690px;
+    min-width: 500px;
+    max-height: 555px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Messenger section
+
+.messenger {
+  margin-bottom: 63px;
+
+  &__in {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+
+    @media (max-width: 1439px) {
+      padding-right: 3%;
+    }
+  }
+
+  &__description {
+    max-width: 490px;
+
+    @media (max-width: 1439px) {
+      width: 470px;
+      padding-right: 20px;
+    }
+  }
+
+  &__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 32px;
+    color: #1D2530;
+    margin-bottom: 68px;
+
+    @media (max-width: 1439px) {
+      white-space: nowrap;
+      font-size: calc(.2vw + 2.7rem);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    margin-bottom: 49px;
+    gap: 29px;
+
+    @media (max-width: 1439px) {
+      gap: 24px;
+    }
+  }
+
+  &__image {
+    max-width: 62px;
+    max-height: 62px;
+
+    img {
+      max-width: 62px;
+    }
+
+    @media (max-width: 1439px) {
+      max-width: 58px;
+      max-height: 58px;
+
+      img {
+        max-width: 58px;
+      }
+    }
+  }
+
+  &__text {
+
+    h6 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #1D2530;
+      margin-bottom: 8px;
+
+      @media (max-width: 1439px) {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 31px;
+        color: #1D2530;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #1D2530;
+
+      @media (max-width: 1439px) {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        color: #1D2530;
+      }
+    }
+  }
+
+  &__phone {
+    width: 411px;
+    height: 666px;
+
+    img {
+      width: 411px;
+    }
+
+    @media (max-width: 1439px) {
+      width: 400px;
+
+      img {
+        width: 400px;
+        max-height: 655px;
+      }
+    }
+  }
+}
+
+
+// Pockets section
+
+.pockets {
+  padding: 100px 0;
+  margin-bottom: 100px;
+  background: #E5E5E5;
+
+  &__in {
+    display: block;
+  }
+
+  &__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 64px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 16px;
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 60px;
+      text-align: center;
+      color: #1D2530;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1D2530;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1439px) {
+      gap: 27px;
+    }
+  }
+
+  &__card {
+    width: 31.53%;
+    max-height: 387px;
+    background: #FCFEFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1439px) {
+      max-width: 31.53%;
+      min-width: 250px;
+      max-height: 387px;
+      background: #FCFEFF;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__types {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    color: #685ED6;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: rgba(104, 94, 214, 0.05); 
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 43px;
+      color: #685ED6;
+      width: 100%;
+      padding: 7px;
+      margin-bottom: 38px;
+      text-align: center;
+      background: rgba(104, 94, 214, 0.05); 
+    }
+  }
+
+  &__info {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 32px;
+    max-width: 255px;
+    max-height: 80px;
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 36px;
+      text-align: center;
+      color: #1D2530;
+      margin-bottom: 30px;
+      max-width: 230px;
+      max-height: 80px;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1D2530;
+    margin-bottom: 46px;
+
+    @media (max-width: 1439px) {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 28px;
+      text-align: center;
+      color: #1D2530;
+      margin-bottom: 44px;
+    }
+  }
+
+  &__btn {
+    padding: 12px;
+    text-align: center;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    width: 82%;
+    max-height: 48px;
+    margin-bottom: 50px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 1439px) {
+      padding: 12px;
+      text-align: center;
+      background: #685ED6;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 6px;
+      width: 80%;
+      max-height: 48px;
+      margin-bottom: 46px;
+    }
+  }
+}
+
+
+// Phones section
+
+.phones {
+
+  &__in {
+    display: block;
+  }
+
+  &__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 64px;
+    color: #1D2530;
+  }
+
+  &__image {
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+// Footer section
+
+.footer {
+  padding: 111px 0 66px;
+  background: #1D2530;
+
+  &__logo {
+    margin-right: 35%;
+
+    h3 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__img {
+    max-width: 81px;
+    max-height: 59px;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    margin-right: 14%;
+
+    h4 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #F4F5F7;
+      margin-bottom: 32px;
+      white-space: nowrap;
+    }
+
+    ul {
+
+      li {
+        font-family: 'Gilroy-Light';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #EEEFF4;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+// All section
+
+.all {
+  padding: 25px 0;
+  background: #141B23;
+
+  p {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+
   }
 }
