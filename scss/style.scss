@@ -115,6 +115,10 @@ h6 {
   @media (max-width: 1439px) {
     width: 77%;
   }
+
+  @media (max-width: 1024px) {
+    width: 86%;
+  }
 }
 
 // Header section
@@ -651,6 +655,176 @@ h6 {
       width: 100%;
     }
   }
+}
+
+
+// Clients section 
+
+
+.clients {
+  margin-bottom: 200px;
+
+  &__position {
+    position: relative;
+    display: block;
+  }
+
+  &__decoration {
+    position: absolute;
+    top: -15px;
+    right: 0;
+
+    img {
+      width: 142px;
+      height: 121px;
+      // transform: rotate(180deg);
+    }
+
+    @media (max-width: 1439px) {
+
+      img {
+        width: 130px;
+        height: 103px;
+      }
+    }
+  }
+
+  &__in {
+    padding: 40px 0;
+  }
+
+
+  // .container {
+  //   max-width: 1120px;
+  //   width: 100%;
+  //   padding: 40px 0;
+  // }
+
+  &__box {
+    margin: 0 0 50px;
+    overflow: hidden;
+    padding: 5px;
+    // padding: 0 1%;
+  }
+
+  &__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 64px;
+    color: #1D2530;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: 2px;
+
+    @media (max-width: 1439px) {
+      font-size: 42px;
+      line-height: 60px;
+      margin-bottom: 47px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__card {
+    border-radius: 8px;
+    min-width: 530px;
+  }
+  
+  &__desc {
+    background: #ffffff;
+    border-radius: 6px;
+    max-width: 540px;
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 32px 32px 56px;
+    box-shadow: 2px 8px 6px rgb(230, 230, 230);
+
+    h3 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: #18191F;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 476px;
+      max-height: 96px;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #18191F;
+    }
+  }
+
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+  }
+
+  &__image {
+    width: 56px;
+    height: 56px;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1D2530;
+  }
+
+  &__job {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1D2530;
+  }
+
+  // .swiper-navBtn {
+  //   color: #000;
+  //   height: 40px;
+  //   width: 40px;
+  //   background: #fff;
+  //   border-radius: 50%;
+  // }
+
+  // .swiper-navBtn::before,
+  // .swiper-navBtn::after {
+  //   font-size: 18px;
+  // }
+
+  .swiper-pagination-bullet {
+    background-color:#685ED6;
+    border: 1px solid #685ED6;
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+
 }
 
 

@@ -115,6 +115,11 @@ h6 {
     width: 77%;
   }
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 86%;
+  }
+}
 
 .header {
   margin-bottom: 121px;
@@ -593,6 +598,131 @@ h6 {
 }
 .phones__image img {
   width: 100%;
+}
+
+.clients {
+  margin-bottom: 200px;
+}
+.clients__position {
+  position: relative;
+  display: block;
+}
+.clients__decoration {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+.clients__decoration img {
+  width: 142px;
+  height: 121px;
+}
+@media (max-width: 1439px) {
+  .clients__decoration img {
+    width: 130px;
+    height: 103px;
+  }
+}
+.clients__in {
+  padding: 40px 0;
+}
+.clients__box {
+  margin: 0 0 50px;
+  overflow: hidden;
+  padding: 5px;
+}
+.clients__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  color: #1D2530;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 2px;
+}
+@media (max-width: 1439px) {
+  .clients__title {
+    font-size: 42px;
+    line-height: 60px;
+    margin-bottom: 47px;
+    letter-spacing: 2px;
+  }
+}
+.clients__card {
+  border-radius: 8px;
+  min-width: 530px;
+}
+.clients__desc {
+  background: #ffffff;
+  border-radius: 6px;
+  max-width: 540px;
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 32px 32px 56px;
+  box-shadow: 2px 8px 6px rgb(230, 230, 230);
+}
+.clients__desc h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18191F;
+  margin-bottom: 8px;
+}
+.clients__desc p {
+  margin: 0 auto;
+  max-width: 476px;
+  max-height: 96px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #18191F;
+}
+.clients__profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.clients__image {
+  width: 56px;
+  height: 56px;
+}
+.clients__image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.clients__name {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1D2530;
+}
+.clients__job {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1D2530;
+}
+.clients .swiper-pagination-bullet {
+  background-color: #685ED6;
+  border: 1px solid #685ED6;
+  width: 12px;
+  height: 12px;
+}
+@media (max-width: 768px) {
+  .clients .swiper-navBtn {
+    display: none;
+  }
 }
 
 .footer {
