@@ -18,13 +18,13 @@
       <div class="header__in container">
         <div class="header__logo">
           <div class="header__img">
-            <img src="./img/image 2.png" alt="img">
+            <a href="./test.html"><img src="./img/image 2.png" alt="img"></a>
           </div>
           <h3>tocha</h3>
         </div>
         <div class="header__menu">
           <ul>
-            <li><a href="./test.html">Подключение</a></li>
+            <li>Подключение</li>
             <li>Оплата</li>
             <li>Контакты</li>
             <li>Выход</li>
@@ -34,6 +34,9 @@
     </header>
 
     <section class="hero">
+      <div class="hero__bg">
+        <img src="./img/bg3.png" alt="img">
+      </div>
       <div class="hero__in container">
         <div class="hero__description">
           <div class="hero__title">
@@ -45,9 +48,6 @@
             Первый месяц — <span class="hero__text">бесплатно!</span>
           </div>
           <button class="hero__btn">
-            <div class="hero__purple">
-              <!-- <img src="./img/Purple Circle.png" alt="img"> -->
-            </div>
             <h5>Подключить</h5>
           </button>
         </div>
@@ -115,66 +115,223 @@
       <div class="pockets__in container">
         <div class="pockets__title">Тарифы</div>
         <div class="pockets__subtitle">Стоимость зависит от трафика сайта</div>
-        <div class="pockets__cards">
-          <div class="pockets__card">
-            <div class="pockets__types">
-              Бесплатно
+        <div class="pockets__swipeeee">        
+          <div class="pockets__cards">
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Бесплатно
+              </div>
+              <div class="pockets__info">
+                Пробный период на 1 месяц
+              </div>
+              <div class="pockets__text">
+                0₽/первый месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 0₽</p>
+              </button>
             </div>
-            <div class="pockets__info">
-              Пробный период на 1 месяц
-            </div>
-            <div class="pockets__text">
-              0₽/первый месяц
-            </div>
-            <button class="pockets__btn">
-              <p>Подключить за 0₽</p>
-            </button>
-          </div>
 
-          <div class="pockets__card">
-            <div class="pockets__types">
-              Базовый
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Базовый
+              </div>
+              <div class="pockets__info">
+                Менее 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                200₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 200₽</p>
+              </button>
             </div>
-            <div class="pockets__info">
-              Менее 1000 посещений в сутки
-            </div>
-            <div class="pockets__text">
-              200₽/месяц
-            </div>
-            <button class="pockets__btn">
-              <p>Подключить за 200₽</p>
-            </button>
-          </div>
 
-          <div class="pockets__card">
-            <div class="pockets__types">
-              Премиум
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Базовый
+              </div>
+              <div class="pockets__info">
+                Менее 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                200₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 200₽</p>
+              </button>
             </div>
-            <div class="pockets__info">
-              Более 1000 посещений в сутки
+
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Базовый
+              </div>
+              <div class="pockets__info">
+                Менее 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                200₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 200₽</p>
+              </button>
             </div>
-            <div class="pockets__text">
-              500₽/месяц
+
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Базовый
+              </div>
+              <div class="pockets__info">
+                Менее 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                200₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 200₽</p>
+              </button>
             </div>
-            <button class="pockets__btn">
-              <p>Подключить за 500₽</p>
-            </button>
+
+            <div class="pockets__card">
+              <div class="pockets__types">
+                Премиум
+              </div>
+              <div class="pockets__info">
+                Более 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                500₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 500₽</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section class="phones">
-      <div class="phones__in">
-        <div class="phones__title"> -->
-          <!-- Всего 3 шага для подключения Telegram чата -->
-        <!-- </div>
-        <div class="phones__image">
-          <img src="./img/steps.png" alt="img">
+
+<!-- 
+    <section class="pockets">
+      <div class="pockets__in container swiper">
+        <div class="pockets__title">Тарифы</div>
+        <div class="pockets__subtitle">Стоимость зависит от трафика сайта</div>
+        <div class="pockets__swipe">        
+          <div class="pockets__cards swiper-wrapper">
+            <div class="pockets__card swiper-slide">
+              <div class="pockets__types">
+                Бесплатно
+              </div>
+              <div class="pockets__info">
+                Пробный период на 1 месяц
+              </div>
+              <div class="pockets__text">
+                0₽/первый месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 0₽</p>
+              </button>
+            </div>
+
+            <div class="pockets__card swiper-slide">
+              <div class="pockets__types">
+                Базовый
+              </div>
+              <div class="pockets__info">
+                Менее 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                200₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 200₽</p>
+              </button>
+            </div>
+
+            <div class="pockets__card swiper-slide">
+              <div class="pockets__types">
+                Премиум
+              </div>
+              <div class="pockets__info">
+                Более 1000 посещений в сутки
+              </div>
+              <div class="pockets__text">
+                500₽/месяц
+              </div>
+              <button class="pockets__btn">
+                <p>Подключить за 500₽</p>
+              </button>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section> -->
 
+    <section class="phones">
+      <div class="phones__top">
+        <div class="phones__in container">
+          <div class="phones__title"> 
+            Всего 3 шага для подключения Telegram чата
+          </div>
+          <div class="phones__decoration">
+            <img src="./img/lines2.png" alt="img">
+          </div>
+          <div class="phones__info">
+
+            <div class="phones__item">
+              <div class="phones__circle">
+                <h6>1</h6>
+              </div>
+              <div class="phones__text">
+                <p>Telegram bot</p>
+              </div>
+              <div class="phones__subtext">
+                <p>Вы создаёте Telegram бота для вашего сайта</p>
+              </div>
+              <div class="phones__image">
+                <img src="./img/X1.svg" alt="img">
+              </div>
+            </div>
+
+            <div class="phones__item2">
+              <div class="phones__circle2">
+                <h6>2</h6>
+              </div>
+              <div class="phones__text2">
+                <p>Подключение Tocha</p>
+              </div>
+              <div class="phones__subtext2">
+                <p>Tocha подключает Telegram бота к вашиму сайту</p>
+              </div>
+              <div class="phones__image2">
+                <img src="./img/X.svg" alt="img">
+              </div>
+            </div>
+
+            <div class="phones__item">
+              <div class="phones__circle">
+                <h6>3</h6>
+              </div>
+              <div class="phones__text">
+                <p>Telegram-чат</p>
+              </div>
+              <div class="phones__subtext">
+                <p>Консультант отвечает <span>на вопросы посетителей сайта</span></p>
+              </div>
+              <div class="phones__image">
+                <img src="./img/X3.svg" alt="img">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="phones__bg">
+          <img src="./img/Rectangle 594.png" alt="img">
+        </div>
+      </div>
+    </section> 
 
     <section class="clients">
       <div class="clients__position container">
@@ -197,6 +354,7 @@
                   политической культуры, будут преданы социально-демократической 
                   анафеме.
                 </p>
+                <img src="./img/screen.png" alt="img">
               </div>
               <div class="clients__profile">
                 <div class="clients__image">
@@ -217,6 +375,7 @@
                   Банальные, но неопровержимые выводы, а также тщательные 
                   исследования конкурентов формируют сеть.
                 </p>
+                <img src="./img/screen.png" alt="img">
               </div>
               <div class="clients__profile">
                 <div class="clients__image">
@@ -238,6 +397,7 @@
                   политической культуры, будут преданы социально-демократической 
                   анафеме.
                 </p>
+                <img src="./img/screen.png" alt="img">
               </div>
               <div class="clients__profile">
                 <div class="clients__image">
@@ -258,11 +418,33 @@
       </div>
     </section>
 
+    <section class="register">
+      <div class="register__in container">
+        <div class="register__vector">
+          <img src="./img/Vector 2.png" alt="img">
+        </div>
+        <div class="register__box">
+          <div class="register__image">
+            <img src="./img/Frame.png" alt="img">
+          </div>
+          <div class="register__info">
+            <div class="register__title">
+              <h5>Подключите Telegram чат <span>уже сегодня</span></h5>
+            </div>
+            <div class="register__place">
+              <input type="text" placeholder="Введите e-mail" class="register__input">
+              <button class="register__btn"><p>Отправить</p></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__logo">
           <div class="footer__img">
-            <img src="./img/image 2.png" alt="img">
+            <a href="#"><img src="./img/image 2.png" alt="img"></a>
           </div>
           <h3>tocha</h3>
         </div>

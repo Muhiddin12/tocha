@@ -124,7 +124,10 @@ h6 {
 // Header section
 
 .header {
-  margin-bottom: 121px;
+
+  @media (max-width: 1070px) {
+    margin-bottom: 15px;
+  }
 
   &__in {
     justify-content: space-between;
@@ -143,6 +146,11 @@ h6 {
       font-size: 28px;
       line-height: 21px;
       color: #1D2530;
+      cursor: pointer;
+
+      @media (max-width: 1024px) {
+        font-size: 26px;
+      }
     }
   }
 
@@ -167,6 +175,11 @@ h6 {
         font-size: 20px;
         line-height: 26px;
         color: #1D2530;
+        cursor: pointer;
+
+        @media (max-width: 1024px) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -175,11 +188,53 @@ h6 {
 // Hero section
 
 .hero {
-  margin-bottom: 131px;
+  margin-bottom: 121px;
 
   &__in {
     display: flex;
     justify-content: space-between;
+    margin-top: -510px;
+
+    @media (max-width:1380px) {
+      margin-top: -480px;
+    }
+
+    @media (max-width:1300px) {
+      margin-top: -440px;
+    }
+
+    @media (max-width:1220px) {
+      margin-top: -400px;
+    }
+
+    @media (max-width:1120px) {
+      margin-top: -370px;
+    }
+
+    @media (max-width:986px) {
+      margin-top: -350px;
+    }
+
+    @media (max-width:935px) {
+      margin-top: -320px;
+    }
+
+    @media (max-width:860px) {
+      margin-top: -305px;
+    }
+
+    @media (max-width:820px) {
+      margin-top: -300px;
+    }
+  }
+
+  &__bg {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__description {
@@ -200,6 +255,7 @@ h6 {
     color: #685ED6;
     margin-bottom: 24px;
     max-width: 380px;
+    cursor: pointer;
 
     span {
       font-family: 'Gilroy';
@@ -232,7 +288,15 @@ h6 {
       }
     }
 
+    @media (max-width: 1024px) {
+      font-size: 37px;
+      line-height: 45px;
 
+      span {
+        font-size: 37px;
+        line-height: 45px;
+      }
+    }
   }
 
   &__subtitle {
@@ -252,8 +316,14 @@ h6 {
       font-size: 22px;
       line-height: 31px;
       color: #1D2530;
-      margin-bottom: 22px;
+      margin-bottom: 26px;
       max-width: 490px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 22px;
     }
   }
 
@@ -264,29 +334,39 @@ h6 {
     font-size: 24px;
     line-height: 34px;
     color: #685ED6;
-    margin-bottom: 32px;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__btn {
-    position: relative;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    max-width: 168px;
     
     h5 {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       padding: 12px 32px;
-      background: #685ED6;
       color: white;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
-      border-radius: 6px;
       font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
       line-height: 24px;
       text-align: center;
-      max-width: 168px;
     }
+  }
+
+  &__btn:hover {
+    background: #33AFE1;
+    padding: 3px;
+  }
+
+  &__btn:active {
+    background: #18E1F7;
+    padding: 0;
   }
 
   &__purple {
@@ -316,13 +396,19 @@ h6 {
     img {
       width: 100%;
     }
+
+    @media (max-width: 1024px) {
+      max-width: 690px;
+      min-width: 410px;
+      max-height: 555px;
+    }
   }
 }
 
 // Messenger section
 
 .messenger {
-  margin-bottom: 63px;
+  margin-bottom: 73px;
 
   &__in {
     display: flex;
@@ -356,6 +442,11 @@ h6 {
       white-space: nowrap;
       font-size: calc(.2vw + 2.7rem);
     }
+
+    @media (max-width: 1024px) {
+      white-space: nowrap;
+      font-size: calc(.2vw + 2.2rem);
+    }
   }
 
   &__menu {
@@ -382,6 +473,17 @@ h6 {
 
       img {
         max-width: 58px;
+        max-height: 58px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 53px;
+      max-height: 53px;
+
+      img {
+        max-width: 53px;
+        max-height: 53px;
       }
     }
   }
@@ -398,13 +500,15 @@ h6 {
       margin-bottom: 8px;
 
       @media (max-width: 1439px) {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 600;
         font-size: 21px;
         line-height: 31px;
-        color: #1D2530;
         margin-bottom: 8px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 6px;
       }
     }
 
@@ -417,12 +521,13 @@ h6 {
       color: #1D2530;
 
       @media (max-width: 1439px) {
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 23px;
-        color: #1D2530;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 21px;
       }
     }
   }
@@ -443,6 +548,15 @@ h6 {
         max-height: 655px;
       }
     }
+
+    @media (max-width: 1024px) {
+      width: 330px;
+
+      img {
+        width: 330px;
+        max-height: 655px;
+      }
+    }
   }
 }
 
@@ -450,13 +564,26 @@ h6 {
 // Pockets section
 
 .pockets {
-  padding: 100px 0;
-  margin-bottom: 100px;
-  background: #E5E5E5;
+  padding: 110px 0 0;
+  background: #ffffff;
 
   &__in {
     display: block;
   }
+
+  // .swiper {
+  //   display: block;
+
+  //   .swiper-slide {
+  //     display: block;
+  //   }
+  // }
+
+  // @media (max-width: 1024px) {
+  //   .swiper {
+  //     display: none;
+  //   }
+  // }
 
   &__title {
     font-family: 'Gilroy';
@@ -495,8 +622,13 @@ h6 {
     display: flex;
     gap: 30px;
 
+    overflow-x: auto;
+
+
     @media (max-width: 1439px) {
       gap: 27px;
+      overflow-x: auto;
+
     }
   }
 
@@ -510,17 +642,21 @@ h6 {
     flex-direction: column;
     align-items: center;
 
+
+
+    min-width: 250px;
+
     @media (max-width: 1439px) {
-      max-width: 31.53%;
       min-width: 250px;
-      max-height: 387px;
-      background: #FCFEFF;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
-      border-radius: 6px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
+
+    @media (max-width: 1024px) {
+      min-width: 290px;
+    }
+  }
+
+  &__cards::-webkit-scrollbar {
+    width: 0;
   }
 
   &__types {
@@ -600,13 +736,13 @@ h6 {
   }
 
   &__btn {
-    padding: 12px;
+    padding: 12px 0;
     text-align: center;
     background: #685ED6;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
     border-radius: 6px;
     width: 82%;
-    max-height: 48px;
+    height: 48px;
     margin-bottom: 50px;
 
     p {
@@ -619,15 +755,25 @@ h6 {
     }
 
     @media (max-width: 1439px) {
-      padding: 12px;
+      padding: 12px 0;
       text-align: center;
       background: #685ED6;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
       border-radius: 6px;
       width: 80%;
-      max-height: 48px;
+      height: 48px;
       margin-bottom: 46px;
     }
+  }
+
+  &__btn:hover {
+    background: #33AFE1;
+    padding: 14px 0;
+  }
+
+  &__btn:active {
+    background: #18E1F7;
+    padding: 12px;
   }
 }
 
@@ -635,8 +781,26 @@ h6 {
 // Phones section
 
 .phones {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 64%,
+    rgba(242, 247, 255, 0.5) 36%,
+    rgba(242, 247, 255, 0.5) 100%,
+  );
+  // background-image: url(/img/Rectangle\ 594.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  padding-top: 100px;
+  margin-bottom: 235px;
+
+  &__top {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   &__in {
+    position: relative;
     display: block;
   }
 
@@ -647,9 +811,181 @@ h6 {
     font-size: 46px;
     line-height: 64px;
     color: #1D2530;
+    text-align: center;
+    margin-bottom: 54px;
+
+    @media (max-width: 1439px) {
+      font-size: 42px;
+      line-height: 60px;
+    }
+  }
+
+  &__decoration {
+    width: 100%;
+    // position: absolute;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px;
+    position: relative;
+
+    @media (max-width: 1164px) {
+      display: flex;
+      gap: 5.7%;
+      margin-top: -185px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    // margin-bottom: -50px;
+  }
+
+  &__circle {
+    width: 72px;
+    height: 72px;
+    background: #F1E4FF;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #685ED6;
+    }
+  }
+
+  &__circle2 {
+    width: 76px;
+    height: 76px;
+    background: #F1E4FF;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #685ED6;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: #1D2530;
+    }
+  }
+
+  &__text2 {
+    margin-bottom: 4px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 29px;
+      text-align: center;
+      color: #1D2530;
+    }
+  }
+
+  &__subtext {
+    max-width: 255px;
+    margin-bottom: 58px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 27px;
+      text-align: center;
+      color: #1D2530;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__subtext2 {
+    max-width: 269px;
+    margin-bottom: 29px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #1D2530;
+    }
   }
 
   &__image {
+    max-width: 210px;
+    max-height: 445px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__image2 {
+    max-width: 265px;
+    max-height: 543px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    margin-top: -420px;
+    max-height: 325px;
 
     img {
       width: 100%;
@@ -662,7 +998,7 @@ h6 {
 
 
 .clients {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
   &__position {
     position: relative;
@@ -692,13 +1028,6 @@ h6 {
   &__in {
     padding: 40px 0;
   }
-
-
-  // .container {
-  //   max-width: 1120px;
-  //   width: 100%;
-  //   padding: 40px 0;
-  // }
 
   &__box {
     margin: 0 0 50px;
@@ -732,6 +1061,7 @@ h6 {
   }
   
   &__desc {
+    position: relative;
     background: #ffffff;
     border-radius: 6px;
     max-width: 540px;
@@ -760,6 +1090,13 @@ h6 {
       font-size: 14px;
       line-height: 24px;
       color: #18191F;
+    }
+
+    img {
+      width: 25px;
+      position: absolute;
+      bottom: -15px;
+      filter: drop-shadow(2px 8px 6px rgb(230, 230, 230));
     }
   }
 
@@ -827,6 +1164,142 @@ h6 {
 
 }
 
+// Register section 
+
+.register {
+  padding: 90px 0;
+  background: #ffffff;
+
+  &__in {
+    position: relative;
+    background: #685ED6;
+    padding: 18px 187px 0 110px;
+    border-radius: 6px;
+
+    @media (max-width: 1439px) {
+      padding: 18px 187px 0 90px;
+    }
+
+    @media (max-width: 1170px) {
+      padding: 18px 187px 0 50px;
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width: 1439px) {
+      max-width: 800px;
+    }
+  }
+
+  &__image {
+    max-width: 314px;
+    // width: 28.28%;
+    // margin-left: 9%;
+    max-height: 271px;
+
+    img {
+      max-width: 314px;
+      // width: 100%;
+    }
+  }
+
+  &__info {
+    // padding: 30px 0 74px 115px;
+    margin: 3.5% 0 0 12%;
+
+    @media (max-width: 1160px) {
+      margin: 3.5% 0 0 7%;
+    }
+  }
+
+  &__title {
+
+    h5 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 33px;
+      line-height: 41px;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+    }
+
+    span {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 33px;
+      line-height: 41px;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+      white-space: nowrap;
+    }
+  }
+
+  &__place {
+    display: flex;
+  }
+
+  &__input {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #474A57;
+    padding: 14px 16px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  &__btn {
+    max-width: 120px;
+    background: #18191F;
+    border-radius: 0px 5px 5px 0px;
+    padding: 14px 22px;
+
+    p {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+
+  &__btn:hover {
+    background: #404249;
+    padding: 14px 25px;
+  }
+
+  &__btn:active {
+    background: #18191F;
+    padding: 14px 25px;
+  }
+
+  &__btn:hover p {
+    font-size: 14.5px;
+  }
+
+  &__vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 76%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
 
 // Footer section
 
@@ -844,6 +1317,7 @@ h6 {
       font-size: 32px;
       line-height: 24px;
       color: #FFFFFF;
+      cursor: pointer;
     }
   }
 
@@ -870,6 +1344,7 @@ h6 {
       color: #F4F5F7;
       margin-bottom: 32px;
       white-space: nowrap;
+      cursor: pointer;
     }
 
     ul {
@@ -882,6 +1357,7 @@ h6 {
         line-height: 26px;
         color: #EEEFF4;
         margin-bottom: 12px;
+        cursor: pointer;
       }
     }
   }
@@ -900,6 +1376,6 @@ h6 {
     font-size: 14px;
     line-height: 24px;
     color: #D9DBE1;
-
+    cursor: pointer;
   }
 }
