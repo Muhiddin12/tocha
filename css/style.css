@@ -120,6 +120,11 @@ h6 {
     width: 86%;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 
 @media (max-width: 1070px) {
   .header {
@@ -175,6 +180,30 @@ h6 {
     font-size: 16px;
   }
 }
+@media (max-width: 970px) {
+  .header__menu ul {
+    gap: 24px;
+  }
+}
+@media (max-width: 630px) {
+  .header__menu ul {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 630px) {
+  .header__burger {
+    width: 40px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+  }
+  .header__burger img {
+    width: 100%;
+  }
+}
 
 .hero {
   margin-bottom: 121px;
@@ -224,12 +253,33 @@ h6 {
     margin-top: -300px;
   }
 }
+@media (max-width: 790px) {
+  .hero__in {
+    margin-top: -270px;
+  }
+}
+@media (max-width: 725px) {
+  .hero__in {
+    margin-top: -260px;
+  }
+}
+@media (max-width: 700px) {
+  .hero__in {
+    display: block;
+    margin-top: 50px;
+  }
+}
 .hero__bg {
   max-width: 1440px;
   margin: 0 auto;
 }
 .hero__bg img {
   width: 100%;
+}
+@media (max-width: 700px) {
+  .hero__bg {
+    display: none;
+  }
 }
 .hero__description {
   max-width: 700px;
@@ -289,6 +339,16 @@ h6 {
   .hero__title span {
     font-size: 37px;
     line-height: 45px;
+  }
+}
+@media (max-width: 800px) {
+  .hero__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero__title span {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 .hero__subtitle {
@@ -376,6 +436,11 @@ h6 {
 .hero__image img {
   width: 100%;
 }
+@media (max-width: 716px) {
+  .hero__image img {
+    margin-top: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .hero__image {
     max-width: 690px;
@@ -383,9 +448,29 @@ h6 {
     max-height: 555px;
   }
 }
+@media (max-width: 880px) {
+  .hero__image {
+    min-width: 390px;
+  }
+}
+@media (max-width: 700px) {
+  .hero__image {
+    margin-top: 30px;
+    display: flex;
+    min-width: 300px;
+  }
+  .hero__image img {
+    max-width: 520px;
+  }
+}
 
 .messenger {
   margin-bottom: 73px;
+}
+@media (max-width: 800px) {
+  .messenger {
+    margin-bottom: 33px;
+  }
 }
 .messenger__in {
   display: flex;
@@ -397,6 +482,13 @@ h6 {
     padding-right: 3%;
   }
 }
+@media (max-width: 700px) {
+  .messenger__in {
+    display: block;
+    padding: 0;
+    max-width: 400px;
+  }
+}
 .messenger__description {
   max-width: 490px;
 }
@@ -404,6 +496,11 @@ h6 {
   .messenger__description {
     width: 470px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .messenger__description {
+    max-width: 300px;
   }
 }
 .messenger__title {
@@ -437,6 +534,18 @@ h6 {
     gap: 24px;
   }
 }
+@media (max-width: 1190px) {
+  .messenger__menu {
+    gap: 20px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 1000px) {
+  .messenger__menu {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}
 .messenger__image {
   max-width: 62px;
   max-height: 62px;
@@ -462,6 +571,17 @@ h6 {
   .messenger__image img {
     max-width: 53px;
     max-height: 53px;
+  }
+}
+@media (max-width: 900px) {
+  .messenger__image {
+    max-width: 38px;
+    max-height: 38px;
+    margin: auto 0;
+  }
+  .messenger__image img {
+    max-width: 38px;
+    max-height: 38px;
   }
 }
 .messenger__text h6 {
@@ -508,18 +628,27 @@ h6 {
   }
 }
 .messenger__phone {
-  width: 411px;
-  height: 666px;
+  width: 400px;
+  max-height: 666px;
 }
 .messenger__phone img {
-  width: 411px;
+  width: 400px;
 }
 @media (max-width: 1439px) {
   .messenger__phone {
-    width: 400px;
+    width: 390px;
   }
   .messenger__phone img {
-    width: 400px;
+    width: 390px;
+    max-height: 655px;
+  }
+}
+@media (max-width: 1124px) {
+  .messenger__phone {
+    width: 370px;
+  }
+  .messenger__phone img {
+    width: 370px;
     max-height: 655px;
   }
 }
@@ -532,13 +661,52 @@ h6 {
     max-height: 655px;
   }
 }
+@media (max-width: 888px) {
+  .messenger__phone {
+    width: 308px;
+  }
+  .messenger__phone img {
+    width: 308px;
+    max-height: 655px;
+  }
+}
 
 .pockets {
   padding: 110px 0 0;
   background: #ffffff;
 }
+@media (max-width: 1160px) {
+  .pockets {
+    padding: 80px 0 0;
+  }
+}
+@media (max-width: 1000px) {
+  .pockets {
+    padding: 50px 0 0;
+  }
+}
 .pockets__in {
   display: block;
+}
+@media (max-width: 1300px) {
+  .pockets__in {
+    width: 78%;
+  }
+}
+@media (max-width: 1024px) {
+  .pockets__in {
+    width: 87%;
+  }
+}
+@media (max-width: 768px) {
+  .pockets__in {
+    width: 91%;
+  }
+}
+@media (max-width: 700px) {
+  .pockets__in {
+    width: 100%;
+  }
 }
 .pockets__title {
   font-family: "Gilroy";
@@ -552,14 +720,16 @@ h6 {
 }
 @media (max-width: 1439px) {
   .pockets__title {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 800;
     font-size: 42px;
     line-height: 60px;
-    text-align: center;
-    color: #1D2530;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .pockets__title {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 14px;
   }
 }
 .pockets__subtitle {
@@ -572,23 +742,46 @@ h6 {
   margin-bottom: 40px;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .pockets__subtitle {
+    font-size: 21px;
+    line-height: 28px;
+    color: #1D2530;
+    margin-bottom: 35px;
+  }
+}
 .pockets__cards {
   display: flex;
   gap: 30px;
-  overflow-x: auto;
 }
 @media (max-width: 1439px) {
   .pockets__cards {
     gap: 27px;
-    overflow-x: auto;
   }
+}
+@media (max-width: 1300px) {
+  .pockets__cards {
+    gap: 27px;
+    overflow-x: auto;
+    padding: 8px;
+  }
+}
+@media (max-width: 700px) {
+  .pockets__cards {
+    gap: 27px;
+    overflow-x: auto;
+    padding: 2% 5%;
+  }
+}
+.pockets__cards::-webkit-scrollbar {
+  width: 0;
 }
 .pockets__card {
   width: 31.53%;
   max-height: 387px;
   background: #FCFEFF;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -597,15 +790,13 @@ h6 {
 @media (max-width: 1439px) {
   .pockets__card {
     min-width: 250px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.07);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .pockets__card {
-    min-width: 290px;
+    min-width: 315px;
   }
-}
-.pockets__cards::-webkit-scrollbar {
-  width: 0;
 }
 .pockets__types {
   font-family: "Gilroy";
@@ -617,6 +808,7 @@ h6 {
   width: 100%;
   padding: 7px;
   margin-bottom: 40px;
+  border-radius: 12px 12px 0 0;
   text-align: center;
   background: rgba(104, 94, 214, 0.05);
 }
@@ -630,6 +822,7 @@ h6 {
     color: #685ED6;
     width: 100%;
     padding: 7px;
+    border-radius: 12px 12px 0 0;
     margin-bottom: 38px;
     text-align: center;
     background: rgba(104, 94, 214, 0.05);
@@ -727,7 +920,23 @@ h6 {
   background-repeat: no-repeat;
   background-color: #fff;
   padding-top: 100px;
-  margin-bottom: 235px;
+  margin-bottom: 250px;
+}
+@media (max-width: 1024px) {
+  .phones {
+    margin-bottom: 220px;
+  }
+}
+@media (max-width: 880px) {
+  .phones {
+    padding-top: 75px;
+    margin-bottom: 170px;
+  }
+}
+@media (max-width: 879px) {
+  .phones {
+    margin-bottom: 10px;
+  }
 }
 .phones__top {
   max-width: 1440px;
@@ -753,11 +962,23 @@ h6 {
     line-height: 60px;
   }
 }
+@media (max-width: 1000px) {
+  .phones__title {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 46px;
+  }
+}
 .phones__decoration {
   width: 100%;
 }
 .phones__decoration img {
   width: 100%;
+}
+@media (max-width: 880px) {
+  .phones__decoration {
+    display: none;
+  }
 }
 .phones__info {
   display: flex;
@@ -772,6 +993,27 @@ h6 {
     margin-top: -185px;
   }
 }
+@media (max-width: 990px) {
+  .phones__info {
+    margin-top: -165px;
+  }
+}
+@media (max-width: 880px) {
+  .phones__info {
+    margin-top: -5px;
+  }
+}
+@media (max-width: 760px) {
+  .phones__info {
+    gap: 5%;
+    overflow-x: auto;
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+.phones__info::-webkit-scrollbar {
+  width: 0;
+}
 .phones__item {
   display: flex;
   flex-direction: column;
@@ -782,6 +1024,11 @@ h6 {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+}
+@media (max-width: 880px) {
+  .phones__item2 {
+    margin-top: 0;
+  }
 }
 .phones__circle {
   width: 72px;
@@ -804,6 +1051,15 @@ h6 {
   text-align: center;
   color: #685ED6;
 }
+@media (max-width: 880px) {
+  .phones__circle {
+    width: 68px;
+    height: 68px;
+  }
+  .phones__circle h6 {
+    font-size: 26px;
+  }
+}
 .phones__circle2 {
   width: 76px;
   height: 76px;
@@ -825,6 +1081,15 @@ h6 {
   text-align: center;
   color: #685ED6;
 }
+@media (max-width: 880px) {
+  .phones__circle2 {
+    width: 70px;
+    height: 70px;
+  }
+  .phones__circle2 h6 {
+    font-size: 26px;
+  }
+}
 .phones__text {
   margin-bottom: 4px;
 }
@@ -837,6 +1102,12 @@ h6 {
   text-align: center;
   color: #1D2530;
 }
+@media (max-width: 880px) {
+  .phones__text p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
 .phones__text2 {
   margin-bottom: 4px;
 }
@@ -848,6 +1119,12 @@ h6 {
   line-height: 29px;
   text-align: center;
   color: #1D2530;
+}
+@media (max-width: 880px) {
+  .phones__text2 p {
+    font-size: 16px;
+    line-height: 23px;
+  }
 }
 .phones__subtext {
   max-width: 255px;
@@ -865,6 +1142,15 @@ h6 {
 .phones__subtext span {
   white-space: nowrap;
 }
+@media (max-width: 880px) {
+  .phones__subtext {
+    margin-bottom: 36px;
+  }
+  .phones__subtext p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .phones__subtext2 {
   max-width: 269px;
   margin-bottom: 29px;
@@ -873,10 +1159,19 @@ h6 {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
   text-align: center;
   color: #1D2530;
+}
+@media (max-width: 880px) {
+  .phones__subtext2 {
+    margin-bottom: 36px;
+  }
+  .phones__subtext2 p {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .phones__image {
   max-width: 210px;
@@ -885,12 +1180,48 @@ h6 {
 .phones__image img {
   width: 100%;
 }
+@media (max-width: 880px) {
+  .phones__image {
+    max-width: 202px;
+    max-height: 445px;
+  }
+  .phones__image img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .phones__image {
+    min-width: 200px;
+    max-height: 445px;
+  }
+  .phones__image img {
+    width: 100%;
+  }
+}
 .phones__image2 {
   max-width: 265px;
   max-height: 543px;
 }
 .phones__image2 img {
   width: 100%;
+}
+@media (max-width: 880px) {
+  .phones__image2 {
+    max-width: 202px;
+    max-height: 445px;
+  }
+  .phones__image2 img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .phones__image2 {
+    min-width: 200px;
+    max-height: 445px;
+  }
+  .phones__image2 img {
+    width: 100%;
+  }
 }
 .phones__bg {
   width: 100%;
@@ -900,9 +1231,24 @@ h6 {
 .phones__bg img {
   width: 100%;
 }
+@media (max-width: 880px) {
+  .phones__bg {
+    margin-top: -200px;
+  }
+}
 
 .clients {
   margin-bottom: 100px;
+}
+@media (max-width: 1024px) {
+  .clients {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 900px) {
+  .clients {
+    margin-bottom: 50px;
+  }
 }
 .clients__position {
   position: relative;
@@ -921,6 +1267,22 @@ h6 {
   .clients__decoration img {
     width: 130px;
     height: 103px;
+  }
+}
+@media (max-width: 1000px) {
+  .clients__decoration img {
+    width: 105px;
+    height: 85px;
+  }
+}
+@media (max-width: 700px) {
+  .clients__decoration {
+    top: -60px;
+  }
+  .clients__decoration img {
+    top: -60px;
+    width: 65px;
+    height: 50px;
   }
 }
 .clients__in {
@@ -950,9 +1312,22 @@ h6 {
     letter-spacing: 2px;
   }
 }
+@media (max-width: 1000px) {
+  .clients__title {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+}
 .clients__card {
   border-radius: 8px;
   min-width: 530px;
+}
+@media (max-width: 700px) {
+  .clients__card {
+    min-width: 330px;
+  }
 }
 .clients__desc {
   position: relative;
@@ -1037,6 +1412,16 @@ h6 {
   padding: 90px 0;
   background: #ffffff;
 }
+@media (max-width: 1024px) {
+  .register {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 900px) {
+  .register {
+    padding: 50px 0;
+  }
+}
 .register__in {
   position: relative;
   background: #685ED6;
@@ -1050,7 +1435,17 @@ h6 {
 }
 @media (max-width: 1170px) {
   .register__in {
-    padding: 18px 187px 0 50px;
+    padding: 18px 187px 0 40px;
+  }
+}
+@media (max-width: 785px) {
+  .register__in {
+    padding: 18px 187px 0 0;
+  }
+}
+@media (max-width: 700px) {
+  .register__in {
+    padding: 0;
   }
 }
 .register__box {
@@ -1064,6 +1459,11 @@ h6 {
     max-width: 800px;
   }
 }
+@media (max-width: 700px) {
+  .register__box {
+    display: block;
+  }
+}
 .register__image {
   max-width: 314px;
   max-height: 271px;
@@ -1071,12 +1471,31 @@ h6 {
 .register__image img {
   max-width: 314px;
 }
+@media (max-width: 940px) {
+  .register__image img {
+    max-width: 260px;
+  }
+}
+@media (max-width: 700px) {
+  .register__image {
+    margin: 0 auto;
+  }
+  .register__image img {
+    max-width: 260px;
+  }
+}
 .register__info {
   margin: 3.5% 0 0 12%;
 }
 @media (max-width: 1160px) {
   .register__info {
     margin: 3.5% 0 0 7%;
+  }
+}
+@media (max-width: 700px) {
+  .register__info {
+    margin: 20px auto;
+    max-width: 400px;
   }
 }
 .register__title h5 {
@@ -1098,6 +1517,19 @@ h6 {
   margin-bottom: 32px;
   white-space: nowrap;
 }
+@media (max-width: 940px) {
+  .register__title h5 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+  .register__title span {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    white-space: nowrap;
+  }
+}
 .register__place {
   display: flex;
 }
@@ -1110,6 +1542,14 @@ h6 {
   color: #474A57;
   padding: 14px 16px;
   border-radius: 5px 0px 0px 5px;
+}
+@media (max-width: 940px) {
+  .register__input {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px 12px;
+    border-radius: 5px 0px 0px 5px;
+  }
 }
 .register__btn {
   max-width: 120px;
@@ -1126,16 +1566,43 @@ h6 {
   color: #FFFFFF;
   text-align: center;
 }
+@media (max-width: 940px) {
+  .register__btn {
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px 12px;
+  }
+  .register__btn p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
 .register__btn:hover {
   background: #404249;
   padding: 14px 25px;
+  max-width: 128px;
+}
+@media (max-width: 940px) {
+  .register__btn:hover {
+    padding: 10px 13px;
+  }
 }
 .register__btn:active {
   background: #18191F;
-  padding: 14px 25px;
+  padding: 14px 22px;
+}
+@media (max-width: 940px) {
+  .register__btn:active {
+    padding: 10px 12px;
+  }
 }
 .register__btn:hover p {
   font-size: 14.5px;
+}
+@media (max-width: 940px) {
+  .register__btn:hover p {
+    font-size: 14px;
+  }
 }
 .register__vector {
   position: absolute;
@@ -1150,8 +1617,18 @@ h6 {
 }
 
 .footer {
-  padding: 111px 0 66px;
+  padding: 111px 0;
   background: #1D2530;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 83px 0;
+  }
+}
+@media (max-width: 900px) {
+  .footer {
+    padding: 63px 0;
+  }
 }
 .footer__logo {
   margin-right: 35%;
@@ -1165,6 +1642,16 @@ h6 {
   color: #FFFFFF;
   cursor: pointer;
 }
+@media (max-width: 1140px) {
+  .footer__logo {
+    margin-right: 28%;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__logo {
+    margin-right: 20%;
+  }
+}
 .footer__img {
   max-width: 81px;
   max-height: 59px;
@@ -1172,6 +1659,20 @@ h6 {
 }
 .footer__img img {
   width: 100%;
+}
+.footer__text {
+  display: flex;
+  gap: 35%;
+}
+@media (max-width: 880px) {
+  .footer__text {
+    gap: 20%;
+  }
+}
+@media (max-width: 700px) {
+  .footer__text {
+    display: block;
+  }
 }
 .footer__info {
   width: 100%;
@@ -1198,10 +1699,18 @@ h6 {
   margin-bottom: 12px;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  .footer__info {
+    margin-bottom: 50px;
+  }
+}
 
 .all {
   padding: 25px 0;
   background: #141B23;
+}
+.all .bottom {
+  justify-content: space-between;
 }
 .all p {
   font-family: "Gilroy-Light";
@@ -1210,5 +1719,35 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   color: #D9DBE1;
+  cursor: pointer;
+}
+.all .name2 a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1ee0b;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media (max-width: 1000px) {
+  .all .name2 p, .all .name2 a {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #f1ee0b;
+    cursor: pointer;
+  }
+}
+.all .author {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1ee0b;
   cursor: pointer;
 }
