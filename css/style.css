@@ -195,8 +195,8 @@ h6 {
 }
 @media (max-width: 630px) {
   .header__burger {
-    width: 40px;
-    height: 30px;
+    width: 35px;
+    height: 25px;
     display: block;
     cursor: pointer;
   }
@@ -207,6 +207,11 @@ h6 {
 
 .hero {
   margin-bottom: 121px;
+}
+@media (max-width: 700px) {
+  .hero {
+    margin-bottom: 71px;
+  }
 }
 .hero__in {
   display: flex;
@@ -469,7 +474,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .messenger {
-    margin-bottom: 33px;
+    margin-bottom: 60px;
   }
 }
 .messenger__in {
@@ -486,7 +491,7 @@ h6 {
   .messenger__in {
     display: block;
     padding: 0;
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 .messenger__description {
@@ -522,6 +527,11 @@ h6 {
   .messenger__title {
     white-space: nowrap;
     font-size: calc(0.2vw + 2.2rem);
+  }
+}
+@media (max-width: 1024px) {
+  .messenger__title {
+    margin-bottom: 50px;
   }
 }
 .messenger__menu {
@@ -670,6 +680,11 @@ h6 {
     max-height: 655px;
   }
 }
+@media (max-width: 700px) {
+  .messenger__phone {
+    margin-top: 50px;
+  }
+}
 
 .pockets {
   padding: 110px 0 0;
@@ -770,7 +785,7 @@ h6 {
   .pockets__cards {
     gap: 27px;
     overflow-x: auto;
-    padding: 2% 5%;
+    padding: 4% 5%;
   }
 }
 .pockets__cards::-webkit-scrollbar {
@@ -796,6 +811,11 @@ h6 {
 @media (max-width: 1300px) {
   .pockets__card {
     min-width: 315px;
+  }
+}
+@media (max-width: 700px) {
+  .pockets__card {
+    min-width: 300px;
   }
 }
 .pockets__types {
@@ -842,13 +862,17 @@ h6 {
 }
 @media (max-width: 1439px) {
   .pockets__info {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 700;
     font-size: 25px;
     line-height: 36px;
-    text-align: center;
-    color: #1D2530;
+    margin-bottom: 30px;
+    max-width: 230px;
+    max-height: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .pockets__info {
+    font-size: 22px;
+    line-height: 31px;
     margin-bottom: 30px;
     max-width: 230px;
     max-height: 80px;
@@ -936,6 +960,31 @@ h6 {
 @media (max-width: 879px) {
   .phones {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .phones {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 630px) {
+  .phones {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 550px) {
+  .phones {
+    margin-bottom: 115px;
+  }
+}
+@media (max-width: 475px) {
+  .phones {
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 390px) {
+  .phones {
+    margin-bottom: 165px;
   }
 }
 .phones__top {
@@ -1277,7 +1326,7 @@ h6 {
 }
 @media (max-width: 700px) {
   .clients__decoration {
-    top: -60px;
+    top: -50px;
   }
   .clients__decoration img {
     top: -60px;
@@ -1324,9 +1373,9 @@ h6 {
   border-radius: 8px;
   min-width: 530px;
 }
-@media (max-width: 700px) {
+@media (max-width: 520px) {
   .clients__card {
-    min-width: 330px;
+    min-width: 310px;
   }
 }
 .clients__desc {
@@ -1364,6 +1413,11 @@ h6 {
   position: absolute;
   bottom: -15px;
   filter: drop-shadow(2px 8px 6px rgb(230, 230, 230));
+}
+@media (max-width: 436px) {
+  .clients__desc {
+    height: 280px;
+  }
 }
 .clients__profile {
   display: flex;
@@ -1461,7 +1515,9 @@ h6 {
 }
 @media (max-width: 700px) {
   .register__box {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .register__image {
@@ -1478,7 +1534,7 @@ h6 {
 }
 @media (max-width: 700px) {
   .register__image {
-    margin: 0 auto;
+    margin: 6% auto 0;
   }
   .register__image img {
     max-width: 260px;
@@ -1494,8 +1550,11 @@ h6 {
 }
 @media (max-width: 700px) {
   .register__info {
-    margin: 20px auto;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7% auto 8%;
   }
 }
 .register__title h5 {
@@ -1523,11 +1582,23 @@ h6 {
     line-height: 35px;
     margin-bottom: 25px;
   }
+}
+@media (max-width: 940px) and (max-width: 700px) {
+  .register__title h5 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 940px) {
   .register__title span {
     font-size: 28px;
     line-height: 35px;
     margin-bottom: 25px;
     white-space: nowrap;
+  }
+}
+@media (max-width: 700px) {
+  .register__title {
+    text-align: center;
   }
 }
 .register__place {
@@ -1549,6 +1620,11 @@ h6 {
     line-height: 24px;
     padding: 10px 12px;
     border-radius: 5px 0px 0px 5px;
+  }
+}
+@media (max-width: 450px) {
+  .register__input {
+    width: 180px;
   }
 }
 .register__btn {
@@ -1630,6 +1706,11 @@ h6 {
     padding: 63px 0;
   }
 }
+@media (max-width: 700px) {
+  .footer {
+    padding: 63px 0 10px;
+  }
+}
 .footer__logo {
   margin-right: 35%;
 }
@@ -1650,6 +1731,16 @@ h6 {
 @media (max-width: 1000px) {
   .footer__logo {
     margin-right: 20%;
+  }
+}
+@media (max-width: 700px) {
+  .footer__logo {
+    margin-right: 30%;
+  }
+}
+@media (max-width: 450px) {
+  .footer__logo {
+    margin-right: 18%;
   }
 }
 .footer__img {
@@ -1712,6 +1803,14 @@ h6 {
 .all .bottom {
   justify-content: space-between;
 }
+@media (max-width: 700px) {
+  .all .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 .all p {
   font-family: "Gilroy-Light";
   font-style: normal;
@@ -1736,7 +1835,7 @@ h6 {
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     color: #f1ee0b;
     cursor: pointer;
