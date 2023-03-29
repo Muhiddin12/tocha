@@ -478,20 +478,47 @@ h6 {
   }
 }
 .messenger__in {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 150px;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1250px) {
   .messenger__in {
-    padding-right: 3%;
+    gap: 100px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .messenger__in {
-    display: block;
-    padding: 0;
-    max-width: 350px;
+    gap: 70px;
+  }
+}
+@media (max-width: 1130px) {
+  .messenger__in {
+    gap: 40px;
+  }
+}
+@media (max-width: 1110px) {
+  .messenger__in {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, 340px);
+  }
+}
+@media (max-width: 1050px) {
+  .messenger__in {
+    gap: 0px;
+    grid-template-columns: repeat(auto-fit, 350px);
+  }
+}
+@media (max-width: 1000px) {
+  .messenger__in {
+    gap: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .messenger__in {
+    gap: 0px;
   }
 }
 .messenger__description {
@@ -499,8 +526,7 @@ h6 {
 }
 @media (max-width: 1439px) {
   .messenger__description {
-    width: 470px;
-    padding-right: 20px;
+    max-width: 470px;
   }
 }
 @media (max-width: 700px) {
@@ -516,16 +542,15 @@ h6 {
   line-height: 32px;
   color: #1D2530;
   margin-bottom: 68px;
+  white-space: nowrap;
 }
 @media (max-width: 1439px) {
   .messenger__title {
-    white-space: nowrap;
     font-size: calc(0.2vw + 2.7rem);
   }
 }
 @media (max-width: 1024px) {
   .messenger__title {
-    white-space: nowrap;
     font-size: calc(0.2vw + 2.2rem);
   }
 }
@@ -638,51 +663,52 @@ h6 {
   }
 }
 .messenger__phone {
-  width: 400px;
+  max-width: 400px;
   max-height: 666px;
 }
 .messenger__phone img {
-  width: 400px;
+  max-width: 400px;
 }
 @media (max-width: 1439px) {
   .messenger__phone {
-    width: 390px;
+    max-width: 390px;
   }
   .messenger__phone img {
-    width: 390px;
+    max-width: 390px;
     max-height: 655px;
   }
 }
 @media (max-width: 1124px) {
   .messenger__phone {
-    width: 370px;
+    max-width: 370px;
   }
   .messenger__phone img {
-    width: 370px;
+    max-width: 370px;
     max-height: 655px;
   }
 }
 @media (max-width: 1024px) {
   .messenger__phone {
-    width: 330px;
+    max-width: 330px;
   }
   .messenger__phone img {
-    width: 330px;
+    max-width: 330px;
     max-height: 655px;
   }
 }
 @media (max-width: 888px) {
   .messenger__phone {
-    width: 308px;
+    max-width: 308px;
+    margin-top: 30px;
   }
   .messenger__phone img {
-    width: 308px;
+    max-width: 308px;
     max-height: 655px;
   }
 }
 @media (max-width: 700px) {
   .messenger__phone {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
