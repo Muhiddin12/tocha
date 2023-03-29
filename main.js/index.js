@@ -2,7 +2,7 @@ var swiper = new Swiper(".clients__box", {
   slidesPerView: 4,
   spaceBetween: 28,
   sliderPerGroup: 4,
-  loop: true,
+  // loop: true,
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
