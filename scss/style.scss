@@ -1421,11 +1421,26 @@ h6 {
     padding: 40px 0;
   }
 
+  @media (max-width: 768px) {
+
+    .swiper {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
   &__box {
     margin: 0 0 50px;
     overflow: hidden;
     padding: 5px;
-    // padding: 0 1%;
+
+    @media (max-width: 768px) {
+      padding: 0 1% 0 5%;
+    }
+
+    @media (max-width: 647px) {
+      padding: 0 2% 0 5%;
+    }
   }
 
   &__title {
@@ -1452,14 +1467,20 @@ h6 {
       margin-bottom: 40px;
       letter-spacing: 1px;
     }
-  }
+  }  
 
   &__card {
     border-radius: 8px;
-    min-width: 530px;
+    // min-width: 350px;
+    min-width: 376px;
 
-    @media (max-width: 520px) {
-      min-width: 310px;
+
+    @media (max-width: 870px) {
+      min-width: 478px;
+    }
+
+    @media (max-width: 543px) {
+      min-width: 325px;
     }
   }
   
@@ -1502,7 +1523,11 @@ h6 {
       filter: drop-shadow(2px 8px 6px rgb(230, 230, 230));
     }
 
-    @media (max-width: 436px) {
+    @media (max-width: 482px) {
+      height: 250px;
+    }
+
+    @media (max-width: 400px) {
       height: 280px;
     }
   }

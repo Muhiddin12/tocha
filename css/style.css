@@ -1363,10 +1363,26 @@ h6 {
 .clients__in {
   padding: 40px 0;
 }
+@media (max-width: 768px) {
+  .clients .swiper {
+    width: 100%;
+    margin: 0;
+  }
+}
 .clients__box {
   margin: 0 0 50px;
   overflow: hidden;
   padding: 5px;
+}
+@media (max-width: 768px) {
+  .clients__box {
+    padding: 0 1% 0 5%;
+  }
+}
+@media (max-width: 647px) {
+  .clients__box {
+    padding: 0 2% 0 5%;
+  }
 }
 .clients__title {
   font-family: "Gilroy";
@@ -1397,11 +1413,16 @@ h6 {
 }
 .clients__card {
   border-radius: 8px;
-  min-width: 530px;
+  min-width: 376px;
 }
-@media (max-width: 520px) {
+@media (max-width: 870px) {
   .clients__card {
-    min-width: 310px;
+    min-width: 478px;
+  }
+}
+@media (max-width: 543px) {
+  .clients__card {
+    min-width: 325px;
   }
 }
 .clients__desc {
@@ -1440,7 +1461,12 @@ h6 {
   bottom: -15px;
   filter: drop-shadow(2px 8px 6px rgb(230, 230, 230));
 }
-@media (max-width: 436px) {
+@media (max-width: 482px) {
+  .clients__desc {
+    height: 250px;
+  }
+}
+@media (max-width: 400px) {
   .clients__desc {
     height: 280px;
   }

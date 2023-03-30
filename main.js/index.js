@@ -20,13 +20,19 @@ var swiper = new Swiper(".clients__box", {
     0: {
       slidesPerView: 1,
     },
-    520: {
-      slidesPerView: 2,
+    600: {
+      slidesPerView: 1.1,
     },
-    768: {
-      slidesPerView: 2,
+    712: {
+      slidesPerView: 1.2,
+    },
+    860: {
+      slidesPerView: 1.5,
     },
     1000: {
+      slidesPerView: 1.5,
+    },
+    1168: {
       slidesPerView: 2,
     },
   },
